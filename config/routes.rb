@@ -12,4 +12,9 @@ Rails.application.routes.draw do
 
   get "/form_display", to: "params#form_display"
   post "/form_result", to: "params#form_result"
+
+  get "/game_form", to: "params#game_form"
+  post "/game_result", to: "params#game_result"
 end
+
+

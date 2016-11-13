@@ -53,4 +53,20 @@ class ParamsController < ApplicationController
         @x = "Winner Winner Chicken Dinner!!"
       end
     end
+
+    def game_form
+
+    end
+
+    def game_result
+        winning_number = 44
+    @guess = params[:guess].to_i
+      if @guess > winning_number
+        @x =  "Guess a little lower"
+      elsif @guess < winning_number
+        @x = "Guess a little higher"
+      else
+        @x = "Winner Winner Chicken Dinner!!"
+      end
+    end
 end
